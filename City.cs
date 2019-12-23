@@ -86,10 +86,10 @@ namespace Prog1
 
         public void mergeOldAndNewCoins()
         {
-            bool isMatch;
+          
             foreach (CoinsBalance ncb in newCoinsBalances)
             {
-                isMatch = false;
+                bool isMatch = false;
                 foreach (CoinsBalance cb in coinsBalances)
                 {
                     if (cb.CommonwealhName.Equals(ncb.CommonwealhName))
