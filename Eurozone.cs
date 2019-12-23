@@ -123,6 +123,7 @@ namespace Prog1
                 if (completeCityCount == currentCountry.Cities.Count && !currentCountry.completeFlag)
                 {
                     currentCountry.completeFlag = true;
+                    this.sortCountries();
                     Console.WriteLine(currentCountry.Name + " " + days);
                 }
                 if (completeCityCount != currentCountry.Cities.Count)
