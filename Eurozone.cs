@@ -13,7 +13,7 @@ namespace Prog1
         {
             get { return commonwealths; }
         }
-        private const int NumberOfNeighbours = 4; // one to the north, east, west and south
+        private const int numberOfNeighbours = 4; // one to the north, east, west and south
 
         public Eurozone()
         {
