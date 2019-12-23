@@ -110,7 +110,6 @@ namespace Prog1
         // checks complete cities and countries
         public bool checkCoinsDistribution(int days)
         {
-            bool toReturn = true;
             foreach (Commonwealth currentCountry in this.commonwealths)
             {
                 int completeCityCount = 0;
@@ -127,9 +126,9 @@ namespace Prog1
                     Console.WriteLine(currentCountry.Name + " " + days);
                 }
                 if (completeCityCount != currentCountry.Cities.Count)
-                    toReturn = false;
+                    return false;
             }
-            return toReturn;
+            return true;
         }
     }
 
